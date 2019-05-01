@@ -1,3 +1,5 @@
+package com.my.bielik;
+
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -70,7 +72,7 @@ class ShopController {
         catch (IOException ex){
             ex.printStackTrace();
         }
-        System.out.printf("%.2f %s\n", sum, currency);
+        System.out.printf("\n\t%.2f %s\n\n", sum, currency);
     }
 
     private String getAllItemsInfo(){

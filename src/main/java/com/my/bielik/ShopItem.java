@@ -1,3 +1,5 @@
+package com.my.bielik;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

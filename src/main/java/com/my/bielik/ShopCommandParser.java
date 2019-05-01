@@ -1,3 +1,5 @@
+package com.my.bielik;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -21,9 +23,11 @@ public class ShopCommandParser {
                     json.getJSONObject("rates").get(container[3]);
                     shopController.purchase(container[4], container[2], container[3], container[1]); // name, price, currency, date
                 } catch (JSONException ex){
-                    System.out.println("illegal currency");
+                    System.out.println("\n\twrong currency\n");
                 }
             }
+            else
+                System.out.println("\n\tinvalid input\n");
         }
         else if(string.equals(Command.ALL)){
             shopController.all();
@@ -35,6 +39,8 @@ public class ShopCommandParser {
                 String[] container = string.split("\\s");
                 shopController.clear(container[1]); // date
             }
+            else
+                System.out.println("\n\tinvalid input\n");
         }
         else if(string.startsWith(Command.REPORT)){
             Pattern pattern = Pattern.compile(Command.REPORT + "\\s\\d{4}\\s[A-Z]{3}");
@@ -45,12 +51,14 @@ public class ShopCommandParser {
                     json.getJSONObject("rates").get(container[2]);
                     shopController.report(container[1], container[2]); // date
                 } catch (JSONException ex){
-                    System.out.println("illegal currency");
+                    System.out.println("\n\twrong currency\n");
                 }
             }
+            else
+                System.out.println("\n\tinvalid input\n");
         }
         else{
-            System.out.println("invalid input");
+            System.out.println("\n\tinvalid input\n");
         }
     }
 
