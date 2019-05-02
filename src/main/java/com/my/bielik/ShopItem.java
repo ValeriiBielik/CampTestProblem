@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-class ShopItem implements Comparable<ShopItem>{
+class ShopItem implements Comparable<ShopItem> {
 
     static final SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-mm-dd");
     private double price;
@@ -19,7 +19,7 @@ class ShopItem implements Comparable<ShopItem>{
         calendar = Calendar.getInstance();
         try {
             calendar.setTime(FORMAT.parse(purchaseDate));
-        } catch (ParseException ex){
+        } catch (ParseException ex) {
             ex.printStackTrace();
         }
     }

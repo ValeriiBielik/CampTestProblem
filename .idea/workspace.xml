@@ -4,6 +4,12 @@
     <list default="true" id="24fee5c7-644d-4be0-843f-b44e0b6072c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/bielik/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/bielik/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopCommandParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopCommandParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ShopCommandParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ShopCommandParserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -28,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,8 +45,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/ShopItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+            <state relative-caret-position="187">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,11 +57,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/JsonReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="476">
+              <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getJsonObject#0;class#JsonReader#0" />
               </folding>
             </state>
           </provider>
@@ -61,17 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/ShopCommandParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ShopCommandParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="222">
+              <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,16 +78,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/ShopController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+            <state relative-caret-position="86">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#207#217#0" expanded="true" />
                 <element signature="method#purchase#0;class#ShopController#0" />
                 <element signature="method#clear#0;class#ShopController#0" />
-                <element signature="method#getAllItemsInfo#0;class#ShopController#0" />
+                <element signature="method#report#0;class#ShopController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ShopCommandParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,11 +125,13 @@
         <option value="$PROJECT_DIR$/src/main/java/ShopController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ShopCommandParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/JsonReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopCommandParser.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/my/bielik/JsonReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopController.java" />
         <option value="$PROJECT_DIR$/src/test/java/ShopCommandParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/my/bielik/ShopCommandParser.java" />
       </list>
     </option>
   </component>
@@ -132,6 +146,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,8 +198,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +219,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShopCommandParserTest">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="SouvenirShopApp" />
@@ -228,16 +242,34 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="ShopCommandParserTest - 2019.05.01 at 17h 13m 22s.xml">
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 25m 04s.xml">
       <configuration name="ShopCommandParserTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopCommandParserTest - 2019.05.01 at 17h 14m 55s.xml">
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 26m 01s.xml">
       <configuration name="ShopCommandParserTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopCommandParserTest - 2019.05.01 at 17h 15m 52s.xml">
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 26m 34s.xml">
       <configuration name="ShopCommandParserTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShopCommandParserTest - 2019.05.01 at 17h 17m 58s.xml">
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 26m 50s.xml">
+      <configuration name="ShopCommandParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 27m 29s.xml">
+      <configuration name="ShopCommandParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 30m 22s.xml">
+      <configuration name="ShopCommandParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 30m 44s.xml">
+      <configuration name="ShopCommandParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 31m 07s.xml">
+      <configuration name="ShopCommandParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 31m 49s.xml">
+      <configuration name="ShopCommandParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShopCommandParserTest - 2019.05.03 at 00h 34m 57s.xml">
       <configuration name="ShopCommandParserTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -245,7 +277,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -267,44 +299,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/ShopController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#purchase#0;class#ShopController#0" />
-            <element signature="method#clear#0;class#ShopController#0" />
-            <element signature="method#getAllItemsInfo#0;class#ShopController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/JsonReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getJsonObject#0;class#JsonReader#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/ShopItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -312,36 +307,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/ShopCommandParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ShopCommandParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ShopCommandParserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="204">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/ShopItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/JsonReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/ShopCommandParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="61" column="18" lean-forward="true" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/my/bielik/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#207#217#0" expanded="true" />
+            <element signature="method#purchase#0;class#ShopController#0" />
+            <element signature="method#clear#0;class#ShopController#0" />
+            <element signature="method#report#0;class#ShopController#0" />
           </folding>
         </state>
       </provider>

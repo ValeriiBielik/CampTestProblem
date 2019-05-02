@@ -11,14 +11,14 @@ public class App {
         ShopCommandParser shopCommandParser = new ShopCommandParser();
         String s;
         System.out.println("Write command:");
-        while(true){
+        while (true) {
             s = in.nextLine();
             if (s.equals("end"))
                 return;
             else
-                try{
-                    shopCommandParser.parseString(s);
-                } catch (IOException ex){
+                try {
+                    System.out.println(shopCommandParser.parseString(s));
+                } catch (IOException ex) {
                     ex.printStackTrace();
                 }
         }

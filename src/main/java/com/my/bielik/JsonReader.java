@@ -9,7 +9,7 @@ import java.nio.charset.Charset;
 
 class JsonReader {
 
-    static JSONObject getJsonObject() throws IOException{
+    static JSONObject getJsonObject() throws IOException {
         return JsonReader.readJsonFromUrl("http://data.fixer.io/api/latest?access_key=a269347001a84c70de8ccf5fd6194f3e");
     }
 

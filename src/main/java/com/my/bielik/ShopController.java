@@ -10,85 +10,83 @@ class ShopController {
 
     private List<ShopItem> items = new ArrayList<ShopItem>();
 
-    void purchase(String name, String price, String currency, String date){
+    String purchase(String name, String price, String currency, String date) {
         items.add(new ShopItem(name, Double.parseDouble(price), currency, date));
         Collections.sort(items);
-        System.out.println(getAllItemsInfo());
+        return getAllItemsInfo();
     }
 
-    void all(){
-        System.out.println(getAllItemsInfo());
+    String all() {
+        return getAllItemsInfo();
     }
 
-    void clear(String date){
+    String clear(String date) {
         Calendar calendar = Calendar.getInstance();
-        try{
+        try {
             calendar.setTime(ShopItem.FORMAT.parse(date));
-            for(int i = 0; i < items.size(); i++) {
+            for (int i = 0; i < items.size(); i++) {
                 if (items.get(i).getDate().equals(calendar)) {
                     items.remove(i);
-                    i++;
+                    i--;
                 }
             }
-        } catch (ParseException ex){
+        } catch (ParseException ex) {
             ex.printStackTrace();
         }
 
-        System.out.println(getAllItemsInfo());
+        return getAllItemsInfo();
     }
 
-    void report(String year, String currency) {
+    String report(String year, String currency) {
         double sum = 0;
         JSONObject json;
         Calendar calendar = (Calendar) Calendar.getInstance().clone();
         calendar.set(Calendar.YEAR, Integer.valueOf(year));
 
-        try{
-             json = JsonReader.getJsonObject();
+        try {
+            json = JsonReader.getJsonObject();
 
-            if (currency.equals(json.get("base"))){
-                for (ShopItem item : items){
-                    if (item.getDate().get(Calendar.YEAR) == calendar.get(Calendar.YEAR)){
-                        if(currency.equals(item.getCurrency()))
+            if (currency.equals(json.get("base"))) {
+                for (ShopItem item : items) {
+                    if (item.getDate().get(Calendar.YEAR) == calendar.get(Calendar.YEAR)) {
+                        if (currency.equals(item.getCurrency()))
                             sum += item.getPrice();
                         else
                             sum += item.getPrice() / Double.valueOf(json.getJSONObject("rates").get(item.getCurrency()).toString());
                     }
                 }
-            }
-            else{
-                for (ShopItem item : items){
-                    if (item.getDate().get(Calendar.YEAR) == calendar.get(Calendar.YEAR)){
-                        if(currency.equals(item.getCurrency()))
+            } else {
+                for (ShopItem item : items) {
+                    if (item.getDate().get(Calendar.YEAR) == calendar.get(Calendar.YEAR)) {
+                        if (currency.equals(item.getCurrency()))
                             sum += item.getPrice();
-                        else{
+                        else {
                             sum += item.getPrice() / Double.valueOf(json.getJSONObject("rates").get(item.getCurrency()).toString())
                                     * Double.valueOf(json.getJSONObject("rates").get(currency).toString());
                         }
                     }
                 }
             }
-        }
-        catch (IOException ex){
+        } catch (IOException ex) {
             ex.printStackTrace();
         }
-        System.out.printf("\n\t%.2f %s\n\n", sum, currency);
+        return "\n\t" + String.format("%.2f", sum) + " " + currency + "\n";
+//        System.out.printf("\n\t%.2f %s\n\n", sum, currency);
     }
 
-    private String getAllItemsInfo(){
+    private String getAllItemsInfo() {
         StringBuilder s = new StringBuilder();
         Calendar temp = Calendar.getInstance();
-        for (ShopItem item : items){
-            if (temp.equals(item.getDate())){
+        for (ShopItem item : items) {
+            if (temp.equals(item.getDate())) {
                 s.append("\n\t")
                         .append(item.getName())
                         .append(" ")
                         .append(item.getPrice())
                         .append(" ")
                         .append(item.getCurrency());
-            }
-            else{
-                if (s.length() != 0){
+            } else {
+                if (s.length() != 0) {
                     s.append("\n");
                 }
                 s.append("\n\t")
